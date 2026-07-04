@@ -1,126 +1,237 @@
-.calc{
-    width: 400px;
-    height:500px;
-    background-color: #ac8282;
-    margin-left:100px;
-    border-radius: 20px;
-    margin-top:50px;
-    
-}
-#screen{
-    width:84%;
-    margin-left:36px;
-    height:60px;
-    margin-top:30px;
-    pointer-events: none;
-    border-radius: 12px;
-}
-.btn{
-    width:60px;
-    height:45px;
-    margin-left:30px;
-    margin-top:30px;
-    border-radius: 10px;
-    background: bisque;
-}
-.cnl{
-    width: 131px;
-    height: 53px;
-    margin-left: 235px;
-    margin-top: 30px;
-    border-radius: 10px;
-    background: bisque;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
+:root {
+    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    --calc-bg: rgba(255, 255, 255, 0.05);
+    --calc-border: rgba(255, 255, 255, 0.1);
+    --btn-bg: rgba(255, 255, 255, 0.1);
+    --btn-hover: rgba(255, 255, 255, 0.2);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent: #3b82f6;
+    --danger: #ef4444;
 }
-.btn:hover{
-    background: #d1b8b8;
-    cursor: pointer;
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.cnl:hover{
-    background: #c51919;
-    cursor: pointer;
+
+html {
+    scroll-behavior: smooth;
 }
-body{
-    background: #b7f786;
+
+header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--calc-border);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.logo-img {
+    height: 30px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    width:100%;
-    
-    
 }
-header{
-    background-color:#acf078;
-    height: 62px;
-    width: 116%;
-    position: fixed;
-    margin-top: -51px;
 
-
-
-
-}
-.nav{
-    float: left;
-    width: 60%;
-    font-size:22px;
-}
-.logo{
-    width:40%;
-    float: left;
-}
-li{
-    float:left;
-    padding-left: 27px;
-  
-}
-ul{
-    list-style-type: none
-}
-a{
+.nav a {
+    color: var(--text-main);
     text-decoration: none;
-    
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
-.aboutcalc{
-    float: right;
-    width: 50%;
-    height: 500px;
-    margin-top: -400px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.nav a:hover {
+    color: var(--accent);
 }
-footer{
-    
-    height: 500px;
-    width:100%;
-}  
-.contact-as{
-    
-    height: 300px;
+
+.main-body {
+    margin-top: 70px;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 70px);
+}
+
+.calc {
+    background: var(--calc-bg);
+    border: 1px solid var(--calc-border);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+#screen {
     width: 100%;
-    background-color: #adee7f;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--calc-border);
+    border-radius: 12px;
+    color: var(--text-main);
+    font-size: 2rem;
+    text-align: right;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+    pointer-events: none;
 }
-.profile-pic{
-    width:50%;
-    width: 50%;
-    margin-left:106px;
-    margin-top:100px;
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
 }
-.about{
-     width: 50%;
-    float: right;
-    margin-top: -377px;
+
+.cnl {
+    grid-column: span 4;
+    background: rgba(239, 68, 68, 0.2);
+    color: var(--danger);
+    border: 1px solid rgba(239, 68, 68, 0.3);
 }
-.x{
-    width: 100%;
-    margin-top: 50px;
-    margin-left:200px;
+
+.cnl:hover {
+    background: rgba(239, 68, 68, 0.3);
 }
-.twit{
-    float:left;
-   padding-left: 100px;
-    padding-top: 97px;
+
+.btn, .cnl {
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid var(--calc-border);
+    background: var(--btn-bg);
+    color: var(--text-main);
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-html{
-    scroll-behavior: smooth;
-    width:100%;
+
+.btn:hover {
+    background: var(--btn-hover);
+    transform: translateY(-2px);
+}
+
+.aboutcalc {
+    max-width: 500px;
+}
+
+.aboutcalc h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutcalc p {
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+footer {
+    background: rgba(15, 23, 42, 0.95);
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--calc-border);
+}
+
+.profile-pic .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent);
+}
+
+.about {
+    max-width: 500px;
+}
+
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.contact-as {
+    background: #0f172a;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.x {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.twit a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: var(--btn-bg);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    border: 1px solid var(--calc-border);
+}
+
+.twit a:hover {
+    background: var(--btn-hover);
+    transform: translateY(-5px);
+}
+
+.twit img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
 }
