@@ -1,7 +1,9 @@
-deploy link:
+deploy link:https://arifbuilder.github.io/Just_Demo_Calculator/
 Calculator
 
 A simple calculator application built as one of my first programming projects while learning web development. This project helped me understand the basics of JavaScript, HTML, and CSS by implementing common arithmetic operations.
 
-and its just for learning purpoes only ,many mistakes their
-cutrently not optimized for mobile view ,its better to open desktop 
+//and its just for learning purpoes only ,many mistakes their
+//cutrently not optimized for mobile view ,its better to open desktop 
+
+all things are fixed
