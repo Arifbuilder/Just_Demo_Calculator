@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>calculater website</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Calculater</h1>
+                <img src="calculator (1).png" alt="Calculator Logo" style="height: 47px;width: 49px;margin-top: -67px;margin-left: 154px;"> 
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sourse.html">Sourse Code</a></li> 
+                    <li><a href="#first">About Calculater</a></li>
+                    <li><a href="#Creater">Creater Info</a></li>
+                    <li><a href="#contact">Contact As</a></li>
+                </ul>
+            </div> 
+        </header>
+        <div class="main-body">
+            <div class="calc" >
+                    <div class="output">
+                        <input type="text" id="screen" >
+                    </div>
+                    <div class="buttons">
+                        <button onclick="clearDisplay()"class="cnl">CLEAR</button>
+
+                    <div class="row">
+                        <button onclick="clickbutton(7)"class="btn">7</button>
+                        <button onclick="clickbutton(8)"class="btn">8</button>
+                        <button onclick="clickbutton(9)"class="btn">9</button>
+                        <button onclick="clickbutton('/')"class="btn">/</button>
+                        
+                    </div>
+                    <div class="row">
+                        <button onclick="clickbutton(4)"class="btn">4</button>
+                        <button onclick="clickbutton(5)"class="btn">5</button>
+                        <button onclick="clickbutton(6)"class="btn">6</button>
+                        <button onclick="clickbutton('*')"class="btn">X</button>
+                        
+                    </div>
+                    <div class="row">
+                        <button onclick="clickbutton(1)"class="btn">1</button>
+                        <button onclick="clickbutton(2)"class="btn">2</button>
+                        <button onclick="clickbutton(3)"class="btn">3</button>
+                        <button onclick="clickbutton('-')"class="btn">-</button>
+                        
+                    </div>
+                    <div class="row">
+                        <button onclick="clickbutton('.')"class="btn">.</button>
+                        <button onclick="clickbutton(0)"class="btn">0</button>
+                        <button onclick="clickbutton('+')"class="btn">+</button>
+                        <button onclick="equalClick('=')"class="btn">=</button>
+                        
+                    </div>
+
+                    </div>
+                </div>
+                <div class="aboutcalc" id="first">
+                    <h1>About Calculater</h1>
+                    <p>A calculator using the eval function in programming (like JavaScript or Python) allows you to evaluate mathematical expressions entered by the user. The eval function takes a string containing the expression and evaluates it, returning the result.<br>
+                    Here's a more detailed breakdown:<br><br>
+How it works:
+User Input: The user enters a mathematical expression, such as "2 + 3" or "10 / 2". 
+String Conversion: The input is treated as a string by the calculator. 
+eval Function: The eval function is called with the string as an argument. 
+Evaluation: The eval function parses the string, interprets it as a code snippet, and executes it, evaluating the mathematical expression. 
+Result: The result of the calculation is returned by the eval function. 
+Display: The calculator displays the result to the user. </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="profile-pic">
+            <img src="arif-circle.png" alt="Profile Picture" style="height: 300px; width:370px ">
+
+            </div>
+            <div class="about" id="Creater">
+                <h1>Creater Info</h1><br>
+                <p>MUHAMED ARIF,<br>Computer Engineering 3-Year Student Studying in Heera Collage of engineering and Techknowledgy <br>Panavoor P O,Nedumangadu,Trivandrum,Kearala<br>
+                    Skills Studying ;<br> HTML, CSS,JavaScript, Python,C ,Java, Mysql , trying to  Explore more Languages and coding functions,Backend and web Development ,APP development ,FULL Stack development.
+                </p>
+
+            </div>
+        </footer>
+        <div class="contact-as" id="contact">
+            <div class="x">
+                <div class="twit">
+                <a href="https://x.com/HikAshikas76057?t=ATVAeOEwp6bOIH9sCyhGcA&s=08"><img src="twitter.png" alt="Twitter Logo" height="100px" width="100px"></a>
+                </div>
+                <div class="twit">
+                <a href="https://www.instagram.com/arif_end_builder?utm_source=qr&igsh=YWRkeHBuNTk0Ymd2"><img src="instagram-logo.png" alt="Instagram Logo  height="100px" width="100px" ></a>
+                 </div>
+                 <div class="twit">
+                 <a href="https://github.com/Arifbuilder"><img src="github.png" alt="GitHub Logo  height="100px" width="100px" ></a>
+                 </div>
+                 <div class="twit">
+                <a href="https://wa.me/qr/662BQTUM5FRBD1"><img src="whatsapp.png" alt="WhatsApp Logo  height="100px" width="100px"></a>
+                </div>
+                
+                                
+            </div>
+        </div>
+    
+    </body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourse-Code</title>
+    <link href="sourse.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="top-nav">
+            
+        <ul>
+            <li><a href="index.html">Back to Home page</a></li>
+            <li><a href="#code-html">HTML Code</a></li>
+            <li><a href="#first">CSS code</a></li>
+            <li><a href="#Creater">Java Script</a></li>
+            
+    </div>
+    <div class="html-code" id="code-html">
+        <h4 style="color: red">Disclaimer! not include This Webpage (The certain page)'s codes</h4>
+        <h1><u>HTML CODE</u></h1>
+        <pre>
+
+            <p>&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;calculater website&lt;/title&gt;
+        &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;
+        &lt;script src="script.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;div class="logo"&gt;
+                &lt;h1&gt;calculater&lt;/h1&gt;  
+            &lt;/div&gt;
+            &lt;div class="nav"&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="index.html"&gt;Sourse Code&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#first"&gt;About Calculater&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#Creater"&gt;Creater Info&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#contact"&gt;Contact As&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt; 
+        &lt;/header&gt;
+        &lt;div class="main-body"&gt;
+            &lt;div class="calc" &gt;
+                    &lt;div class="output"&gt;
+                        &lt;input type="text" id="screen" &gt;
+                    &lt;/div&gt;
+                    &lt;div class="buttons"&gt;
+                        &lt;button onclick="clearDisplay()"class="cnl"&gt;CLEAR&lt;/button&gt;
+
+                    &lt;div class="row"&gt;
+                        &lt;button onclick="clickbutton(7)"class="btn"&gt;7&lt;/button&gt;
+                        &lt;button onclick="clickbutton(8)"class="btn"&gt;8&lt;/button&gt;
+                        &lt;button onclick="clickbutton(9)"class="btn"&gt;9&lt;/button&gt;
+                        &lt;button onclick="clickbutton('/')"class="btn"&gt;/&lt;/button&gt;
+                        
+                    &lt;/div&gt;
+                    &lt;div class="row"&gt;
+                        &lt;button onclick="clickbutton(4)"class="btn"&gt;4&lt;/button&gt;
+                        &lt;button onclick="clickbutton(5)"class="btn"&gt;5&lt;/button&gt;
+                        &lt;button onclick="clickbutton(6)"class="btn"&gt;6&lt;/button&gt;
+                        &lt;button onclick="clickbutton('*')"class="btn"&gt;X&lt;/button&gt;
+                        
+                    &lt;/div&gt;
+                    &lt;div class="row"&gt;
+                        &lt;button onclick="clickbutton(1)"class="btn"&gt;1&lt;/button&gt;
+                        &lt;button onclick="clickbutton(2)"class="btn"&gt;2&lt;/button&gt;
+                        &lt;button onclick="clickbutton(3)"class="btn"&gt;3&lt;/button&gt;
+                        &lt;button onclick="clickbutton('-')"class="btn"&gt;-&lt;/button&gt;
+                        
+                    &lt;/div&gt;
+                    &lt;div class="row"&gt;
+                        &lt;button onclick="clickbutton('.')"class="btn"&gt;.&lt;/button&gt;
+                        &lt;button onclick="clickbutton(0)"class="btn"&gt;0&lt;/button&gt;
+                        &lt;button onclick="clickbutton('+')"class="btn"&gt;+&lt;/button&gt;
+                        &lt;button onclick="equalClick('=')"class="btn"&gt;=&lt;/button&gt;
+                        
+                    &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="aboutcalc" id="first"&gt;
+                    &lt;h1&gt;About Calculater&lt;/h1&gt;
+                    &lt;p&gt;A calculator using the eval function in programming (like JavaScript or Python) allows you to evaluate mathematical expressions entered by the user. The eval function takes a string containing the expression and evaluates it, returning the result.&lt;br&gt;
+                    Here's a more detailed breakdown:&lt;br&gt;&lt;br&gt;
+                How it works:
+                User Input: The user enters a mathematical expression, such as "2 + 3" or "10 / 2". 
+                String Conversion: The input is treated as a string by the calculator. 
+                eval Function: The eval function is called with the string as an argument. 
+                Evaluation: The eval function parses the string, interprets it as a code snippet, and executes it, evaluating the mathematical expression. 
+                Result: The result of the calculation is returned by the eval function. 
+                Display: The calculator displays the result to the user. &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class="profile-pic"&gt;
+            &lt;img src="profile.jpg" alt="Profile Picture" style="height: 300px; width:400px " &gt;
+   
+
+            &lt;/div&gt;
+            &lt;div class="about" id="Creater"&gt;
+                &lt;h1&gt;Creater Info&lt;/h1&gt;
+                &lt;p&gt;MUHAMED ARIF,&lt;br&gt;Computer Engineering 3-Year Student Studying in Heera Collage of engineering and Techknowledgy &lt;br&gt;Panavoor P O,Nedumangadu,Trivandrum,Kearala&lt;br&gt;
+                    Skills Studying ;&lt;br&gt; HTML, CSS,JavaScript, Python,C ,Java, Mysql , trying to  Explore more Languages and coding functions,Backend and web Development ,APP development ,FULL Stack development.
+                &lt;/p&gt;
+
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;div class="contact-as" id="contact"&gt;
+            &lt;div class="x"&gt;
+                &lt;div class="twit"&gt;
+                &lt;a href="https://x.com/HikAshikas76057?t=ATVAeOEwp6bOIH9sCyhGcA&s=08"&gt;&lt;img src="twitter.png" alt="Twitter Logo" height="100px" width="100px"&gt;&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="twit"&gt;
+                &lt;a href="https://www.instagram.com/arif_end_builder?utm_source=qr&igsh=YWRkeHBuNTk0Ymd2"&gt;&lt;img src="instagram-logo.png" alt="Instagram Logo  height="100px" width="100px" &gt;&lt;/a&gt;
+                 &lt;/div&gt;
+                 &lt;div class="twit"&gt;
+                 &lt;a href="https://github.com/Arifbuilder"&gt;&lt;img src="github.png" alt="GitHub Logo  height="100px" width="100px" &gt;&lt;/a&gt;
+                 &lt;/div&gt;
+                 &lt;div class="twit"&gt;
+                &lt;a href="https://wa.me/qr/662BQTUM5FRBD1"&gt;&lt;img src="whatsapp.png" alt="WhatsApp Logo  height="100px" width="100px"&gt;&lt;/a&gt;
+                &lt;/div&gt;
+                
+                                
+            &lt;/div&gt;
+        &lt;/div&gt;
+    
+    &lt;/body&gt;
+&lt;/html&gt; 
+    </div>
+    <div class="css-code" id="first">
+        <h1><u>CSS Code</u></h1>
+        <pre><p>.calc{
+    width: 400px;
+    height:500px;
+    background-color: #ac8282;
+    margin-left:100px;
+    border-radius: 20px;
+    margin-top:50px;
+    
+}
+#screen{
+    width:84%;
+    margin-left:36px;
+    height:60px;
+    margin-top:30px;
+    pointer-events: none;
+    border-radius: 12px;
+}
+.btn{
+    width:60px;
+    height:45px;
+    margin-left:30px;
+    margin-top:30px;
+    border-radius: 10px;
+    background: bisque;
+}
+.cnl{
+    width: 131px;
+    height: 53px;
+    margin-left: 235px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: bisque;
+
+}
+.btn:hover{
+    background: #d1b8b8;
+    cursor: pointer;
+}
+.cnl:hover{
+    background: #c51919;
+    cursor: pointer;
+}
+body{
+    background: #b7f786;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width:100%;
+    
+    
+}
+header{
+    background-color: aliceblue;
+    height: 62px;
+    width: 116%;
+    position: fixed;
+    margin-top: -51px;
+
+
+
+
+}
+.nav{
+    float: left;
+    width: 60%;
+    font-size:22px;
+}
+.logo{
+    width:40%;
+    float: left;
+}
+li{
+    float:left;
+    padding-left: 27px;
+  
+}
+ul{
+    list-style-type: none
+}
+a{
+    text-decoration: none;
+    
+}
+.aboutcalc{
+    float: right;
+    width: 50%;
+    height: 500px;
+    margin-top: -400px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer{
+    
+    height: 500px;
+    width:100%;
+}  
+.contact-as{
+    
+    height: 300px;
+    width: 100%;
+    background-color: #adee7f;
+}
+.profile-pic{
+    width:50%;
+    width: 50%;
+    margin-left:106px;
+    margin-top:100px;
+}
+.about{
+     width: 50%;
+    float: right;
+    margin-top: -334px;
+}
+.x{
+    width: 100%;
+    margin-top: 50px;
+    margin-left:200px;
+}
+.twit{
+    float:left;
+   padding-left: 100px;
+    padding-top: 97px;
+}
+html{
+    scroll-behavior: smooth;
+    width:100%;
+}</pre>
+
+    
+    </div>
+    <div class="js-code" id="Creater">
+        <h1><u>JAVA-SCRIPT Code</u></h1>
+        <p>function clickbutton(val) { <br>
+    document.getElementById("screen").value+= val;{<br>
+}{<br><br>
+
+function clearDisplay() {<br>
+    document.getElementById("screen").value = "";{<br><br>
+   
+}{<br>
+function equalClick(){<br>
+    var text=document.getElementById("screen").value{<br>
+    var result=eval(text);{<br>
+    document.getElementById("screen").value=result;{<br><br>
+
+ 
+    </div>   
+    
+</body>
+</html>
